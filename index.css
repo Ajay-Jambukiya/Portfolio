@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(0, 0, 33);
+    /* background-color: navy; */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(4, 4, 62);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: rgb(104, 104, 251);
+    text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5);
+    text-decoration: underline;
+    font-size: 1.05rem;
+}
+.left a{
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px 3px rgb(164, 164, 250);
+}
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 100px 0;
+}
+.firstSection > div{
+    width: 30%;
+    /* background-color: brown; */
+}
+.leftSection{
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.leftSection .buttons{
+    padding: 40px 0;
+}
+.leftSection .btn{
+    padding: 10px;
+    color: white;
+    background-color: #031162;
+    border: 1.5px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.rightSection img{
+    width: 80%;
+}
+.Name{
+    color: rgb(140, 140, 255);
+    font-size: 3rem;
+}
+#element{
+    color: rgb(140, 140, 255);
+}
+.secondSection{
+    max-width: 80vw;
+    margin: auto;
+    height: 90vh;
+}
+main hr{
+    border: 0;
+    height: 1px;
+    background: rgb(140, 140, 255);
+    margin: 20px 90px;
+}
+.secondSection .text-gray{
+    color: grey;
+}
+.secondSection h2{
+    font-size: 1.8rem;
+}
+.secondSection .box{
+    background: white;
+    height: 1px;
+    width: 77vw;
+    margin: 50px 0;
+    display: flex;
+}
+.secondSection .img-top{
+    width: 25px;
+    position: relative;
+    top: -25px;
+    left: -12px;
+}
+.secondSection .verticle{
+    border-left: none;
+    height: 90px;
+    width: 0.5px;
+    background: white;
+    margin: 0 95px;
+}
+.secondSection .verticle-title{
+    position: relative;
+    top: 70px;
+    width: 150px;
+    font-size: smaller;
+}
+.secondSection .verticle-desc{
+    position: relative;
+    top: 80px;
+    width: 150px;
+    color: gray;
+    font-size: small;
+}
+footer{
+    background-color: rgb(0, 0, 33);
+}
+.footer > div{
+    width: 110px;
+}
+footer .footer{
+    display: flex;  
+    padding: 25px 100px;
+    justify-content: space-evenly;
+    background-image: url(./PNG/1to5.png) 100px;
+}
+.footer-style ul{
+    list-style: none;
+}
+.footer-second ul a{
+    text-decoration: none;
+    color: white;
+}
+.footer-style ul a:hover{
+    text-decoration: underline;
+    color: rgb(104, 104, 251);
+    font-size: 1.01rem;
+}
+.footer-text{
+    color: gray;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* @media screen and (max-width: 2000px){
+    
+
+} */
+@media screen and (max-width: 1200px){
+    .firstSection{
+        flex-direction: column-reverse;
+        margin: 50px;
+    }
+    .leftSection{
+        /* width: 100% !important; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* padding-bottom: 10px; */
+        /* font-size: 50px; */
+        /* margin-top: 50px; */
+        /* line-height: 4rem; */
+    }
+    .leftSection .Name{
+        font-size: 5rem;
+    }
+    .leftSection .btn{
+        font-size: 40px;
+        padding: 15px;
+    }
+    .rightSection{
+        padding-top: 10px;
+    }
+    .rightSection img{
+        width: 100%;
+    }
+    .leftSection div{
+        width: 100%;
+    }
+    .box{
+        flex-direction: column;
+    }
+    .secondSection .verticle{
+        height: unset;
+    }
+    .verticle-title,.verticle-desc{
+        left: 45px;
+    }
+    .firstSection > div{
+        width: 60%;
+    }
+    
+}
+/* @media screen and (max-width:1000){
+    .leftSection .buttons .btn{
+        font-size: 1px;
+    }
+} */
